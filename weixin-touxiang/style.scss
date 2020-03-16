@@ -11,6 +11,7 @@ body {
   }
 
   .wrapper {
+    width: 100%;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -19,7 +20,7 @@ body {
   #canvas {
     position: absolute;
     display: block;
-    margin: 10px auto;
+    margin: 50px auto;
     transform: translateX(-50%);
     left: 50%;
     /* opacity: 0; */
@@ -30,10 +31,15 @@ body {
     width: 400px;
     height: 46px;
     opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
   }
 
   .upload-btn {
-    width: 400px;
+    width: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
   }
 }

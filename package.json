@@ -11,8 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html",
-    "pro": "parcel index.html NODE_ENV=production --https"
+    "dev": "rm -rf dist/ && parcel index.html -p 3001",
+    "pro": "rm -rf dist/ && parcel index.html NODE_ENV=production -p 3001"
   },
   "keywords": [],
   "author": "crooner",
