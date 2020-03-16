@@ -7,7 +7,7 @@
   <title>为武汉加油！今天，我们一起换头像</title>
   <link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap.css">
   <link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
   <script>
     function onaddTouxiang() {
       var uploadBtn = document.getElementsByClassName('uploadfile')[0]
@@ -23,7 +23,9 @@
         var width = this.width
         ctx.drawImage(this, 0, 0, width, height)
         var icon = new Image()
-        icon.src = './jiayou-icon.jpg'
+        var jiayou = document.getElementsByClassName('jiayou-icon')[0]
+        // icon.src = './jiayou-icon.jpg'
+        icon.src = jiayou.src
         window.ctx = ctx
         icon.onload = function () {
           var iconHeight = 25;
@@ -36,7 +38,7 @@
   </script>
 </head>
 
-<body class="weixin">
+<body class="weixin-icon">
   <div class="content">
     <div class="wrapper">
       <button class="upload-btn btn btn-lg btn-info">上传头像</button>
@@ -44,6 +46,7 @@
       <canvas id="canvas" width="150px" height="150px"></canvas>
     </div>
   </div>
+  <img class="jiayou-icon hide" src="./jiayou-icon.jpg">
 </body>
 
 </html>

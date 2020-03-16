@@ -2,16 +2,19 @@
   "name": "js-develop",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "dependencies": {
     "parcel-bundler": "^1.12.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.26.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel *.html"
+    "dev": "parcel index.html",
+    "pro": "parcel index.html NODE_ENV=production --https"
   },
   "keywords": [],
-  "author": "",
+  "author": "crooner",
   "license": "ISC"
 }
