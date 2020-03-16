@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>为武汉加油！今天，我们一起换头像</title>
+  <link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../libs/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function onaddTouxiang() {
+      var uploadBtn = document.getElementsByClassName('uploadfile')[0]
+      var files = uploadBtn.files
+      if (!files.length) {
+        return
+      }
+      var canvas = document.getElementById('canvas')
+      var ctx = canvas.getContext('2d')
+      var image = new Image()
+      image.onload = function () {
+        var height = this.height
+        var width = this.width
+        ctx.drawImage(this, 0, 0, width, height)
+        var icon = new Image()
+        icon.src = './jiayou-icon.jpg'
+        window.ctx = ctx
+        icon.onload = function () {
+          var iconHeight = 25;
+          ctx.drawImage(this, 0, height - iconHeight, width, iconHeight)
+        }
+      }
+      image.src = window.URL.createObjectURL(files[0]);
+
+    }
+  </script>
+</head>
+
+<body class="weixin">
+  <div class="content">
+    <div class="wrapper">
+      <button class="upload-btn btn btn-lg btn-info">上传头像</button>
+      <input type="file" class="uploadfile" accept="image/png, image/jpeg" onchange="onaddTouxiang()"></input>
+      <canvas id="canvas" width="150px" height="150px"></canvas>
+    </div>
+  </div>
+</body>
+
+</html>

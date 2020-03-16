@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+}
+
+.weixin .content {
+  height: 100%;
+  width: 100%;
+  background-image: url('./touxiang-bg.jpg');
+  background-size: 100% 100%;
+}
+
+.wrapper {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#canvas {
+  position: absolute;
+  display: block;
+  margin: 10px auto;
+  transform: translateX(-50%);
+  left: 50%;
+  /* opacity: 0; */
+}
+.uploadfile {
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 46px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-btn {
+  width: 400px;
+}
