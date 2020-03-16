@@ -1,0 +1,204 @@
+/* .li-none {
+  position: absolute;
+  top: 5%;
+  right: 0px;
+} */
+/*首页图片*/
+.li-none p {
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  display: block;
+}
+.page {
+  overflow: hidden;
+  border-left: #000000 0px solid;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+}
+/*说话框*/
+.send {
+  position: absolute;
+  width: 150px;
+  height: 135px;
+  background: lightblue;
+  border-radius: 5px; /* 圆角 */
+  margin: 30px auto 0;
+  opacity: 0.5;
+  top: 10%;
+  left: 60%;
+}
+
+.send .arrow {
+  position: absolute;
+  top: 118px;
+  right: 150px; /* 圆角的位置调试*/
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 8px;
+  border-color: white #4d4948 white white;
+}
+/*第一张图片*/
+.first {
+  text-align: center;
+  display: block;
+  margin: 100px auto;
+}
+.subsequently {
+  position: absolute;
+  top: 63.5%;
+  right: 32%;
+  width: 89px;
+  height: 63px;
+  background: #65c5e3;
+  border: 2px solid #bbe0fb;
+  box-sizing: border-box;
+  border-radius: 10px;
+  opacity: 0.5;
+  display: none;
+}
+/*确认按钮*/
+.submit {
+  position: absolute;
+  width: 62px;
+  height: 34px;
+  background: #65c5e3;
+  border: 2px solid #bbe0fb;
+  box-sizing: border-box;
+  border-radius: 10px;
+  left: 15%;
+  top: 48%;
+}
+.reset {
+  position: absolute;
+  width: 59px;
+  height: 33px;
+  background: #79abda;
+  border: 1px solid #7cc7de;
+  box-sizing: border-box;
+  border-radius: 10px;
+  left: 43%;
+  top: 48%;
+}
+/*第二张图片*/
+.two_p {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  min-width: 1200px;
+  position: absolute;
+  width: 983px;
+  height: 646px;
+  background: url(./imgs/2.jpg) no-repeat;
+  mix-blend-mode: multiply;
+  background-position: 196px 140px;
+  left: 10%;
+  top: 0%;
+  display: none;
+}
+/*书本出现*/
+#book {
+  display: none;
+  width: 290px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -200px 0 0 -145px;
+  background: black;
+  transform-style: preserve-3d;
+}
+
+#book .page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+}
+
+#book .topNode {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(./imgs/3.jpg);
+  background-size: 290px 400px;
+}
+
+#book .bottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(./imgs/5.jpg);
+  background-size: 290px 400px;
+}
+
+#backNode {
+  height: 100%;
+  width: 50px;
+  background: url(./imgs/4.jpg);
+  position: absolute;
+  background-size: 50px 400px;
+  /*translateZ为width一半*/
+  transform: rotateY(90deg) translateZ(-25px);
+}
+#center {
+  left: 45%;
+  position: absolute;
+  top: 50%;
+  display: none;
+}
+
+/* 底部边框 */
+#DHTMLBOOK {
+  background: #000;
+  left: -360px;
+  visibility: hidden;
+  width: 760px;
+  position: relative;
+  top: -280px;
+  height: 580px;
+}
+
+#TXTBOX {
+  font-size: 0.8em;
+  width: 410px;
+  color: #aba193;
+  font-family: verdana;
+  position: absolute;
+  top: 420px;
+  text-align: center;
+}
+
+.page {
+  overflow: hidden;
+  border-left: #000000 1px solid;
+  width: 50%;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+}
+
+.right {
+  border-right: white 1px solid;
+  left: 50%;
+  opacity: 0.9;
+  background: url(./imgs/4.jpg);
+}
+
+.turn {
+  background: white;
+  background: url(./imgs/1.jpg);
+  /* opacity: 0.9; */
+}
+
+.img {
+  width: 100%;
+  position: absolute;
+  height: 200%;
+  top: -40%;
+  left: 0%;
+  background-position: center center;
+}

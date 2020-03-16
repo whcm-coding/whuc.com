@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./女神节.css" />
+  <!-- <script src="../libs/jquery-3.4.1.js"></script> -->
+  <script>
+    //书本出现
+    function tbook() {
+      var book = document.getElementById('book');
+      var tbook = document.getElementById('backNode');
+      // img.style.opacity = 0;
+      book.style.display = 'block';
+      for (var i = 0; i < 25; i++) {
+        var oPage = document.createElement('div');
+        oPage.className = 'page';
+        if (i == 24) {
+          oPage.className = 'topNode';
+        }
+        oPage.style.transform = 'translateZ(' + i + 'px)';
+        book.appendChild(oPage);
+      }
+
+      /*下面的page*/
+      for (var i = 0; i < 25; i++) {
+        var oPage = document.createElement('div');
+
+        oPage.className = 'page';
+
+        oPage.style.transform = 'translateZ(' + -i + 'px)';
+        if (i == 24) {
+          oPage.className = 'bottom';
+          //图片要镜像
+          oPage.style.transform = 'translateZ(' + -i + 'px) scaleX(-1)';
+        }
+        book.appendChild(oPage);
+      }
+
+      var reg = 0;
+      //让书旋转起来
+      var timer = setInterval(function () {
+        reg++;
+        book.style.transform = 'perspective(800px) rotateY(' + reg + 'deg)';
+      }, 8);
+      function stopTimer() {
+        clearTimeout(timer);
+      }
+      function starTimer() {
+        var timer = setInterval(function () {
+          reg++;
+          book.style.transform = 'perspective(800px) rotateY(' + reg + 'deg)';
+        }, 8);
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <div>
+    <video src="./video.mp3" autoplay id="video" class="video3"
+      style="width: 100px; height:100px;position: absolute;top:-10px;right: 10px;"></video>
+  </div>
+  <div class="page">
+    <p class="li-none" id="page2Txt">
+      嘘~ 女生节快乐哦！</br>送你一个礼物喔
+    </p>
+  </div>
+  <div class="el-page2 li-none">
+    <p class="fenge-solid"></p>
+    <p class="page2-txt" id="page2TxtShow"></p>
+  </div>
+  <div class="send">
+    <div class="arrow"></div>
+  </div>
+  <p class="first">
+    <img src="./imgs/1.jpg" />
+  </p>
+  <div style="width: 400px;height: 300px;position: absolute;top: 20%;left: 35%;display: none;">
+    <img src="./imgs/4.jpg" id="img" alt="Here is a pic" />
+  </div>
+  <div class="two_p">
+    <input type="button" value="接受" class="submit" onclick="tbook()">
+    <input type="button" value="必须接受" class="reset" onclick="tbook()">
+    <div id="book">
+      <div id="backNode"></div>
+    </div>
+  </div>
+  <div>
+    <button class="subsequently">OPEN</button>
+  </div>
+  <div id="center">
+    <div id="DHTMLBOOK">
+      <span class="page" onMouseDown="return false;" ondblclick="TPL();" onclick="TPL();"><img class="img" /></span>
+
+      <span class="page right" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img class="img"
+          style="LEFT: -100%" /></span>
+
+      <span class="page turn" onMouseDown="return false;" ondblclick="TPL();" onclick="TPL();"><img class="img"
+          style="FILTER: alpha(); opacity: 1" /></span>
+
+      <span class="page turn right" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img class="img"
+          style="FILTER: alpha(); LEFT: -100%; opacity: 1" /></span>
+
+      <div id="TXTBOX"></div>
+    </div>
+  </div>
+
+  <div id="imgsrc" style="VISIBILITY: hidden">
+    <!-- <img alt="In the early morning he departed." src="../../img2/1.jpg" > -->
+
+    <img alt="Believing she had dreamed of the roar of his bike," src="./imgs/6.jpg" />
+
+    <!-- <img
+        alt="she woke up to the sunshine in her eyelids."
+        src="../../img2/3.jpg"
+      /> -->
+    <!-- <img
+        alt="she woke up to the sunshine in her eyelids."
+        src="../../img2/4.jpg"
+      /> -->
+    <!-- <img
+        alt="she woke up to the sunshine in her eyelids."
+        src="../../img2/5.jpg"
+      /> -->
+    <!-- <img
+        alt="she woke up to the sunshine in her eyelids."
+        src="../../img2/6.jpg"
+      /> -->
+    <img alt="Believing she had dreamed of the roar of his bike," src="./imgs/7.jpg" />
+    <img alt="she woke up to the sunshine in her eyelids." src="./imgs/8.jpg" />
+    <img alt="Believing she had dreamed of the roar of his bike," src="./imgs/9.jpg" />
+    <img alt="she woke up to the sunshine in her eyelids." src="./imgs/10.jpg" />
+    <img alt="Believing she had dreamed of the roar of his bike," src="./imgs/11.jpg" />
+    <img alt="she woke up to the sunshine in her eyelids." src="./imgs/12.jpg" />
+    <img alt="Believing she had dreamed of the roar of his bike," src="./imgs/13.jpg" />
+    <img alt="she woke up to the sunshine in her eyelids." src="./imgs/14.jpg" />
+    <img alt="Believing she had dreamed of the roar of his bike," src="./imgs/15.jpg" />
+    <img alt="she woke up to the sunshine in her eyelids." src="./imgs/16.png" />
+    <img alt="Believing she had dreamed of the roar of his bike," src="./imgs/17.jpg" />
+  </div>
+
+  <script src="./女神节.js"></script>
+</body>
+
+</html>
