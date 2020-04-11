@@ -3,6 +3,36 @@
   top: 5%;
   right: 0px;
 } */
+#video {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+.img-wrapper {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  display: none;
+}
+.turn0 .img {
+  left: -100%;
+}
+.turn1 .img {
+  filter: alpha();
+  opacity: 1;
+}
+.turn2 .img {
+  filter: alpha();
+  left: -100%;
+  opacity: 1;
+}
+#imgsrc {
+  visibility: hidden;
+}
 /*首页图片*/
 .li-none p {
   position: absolute;

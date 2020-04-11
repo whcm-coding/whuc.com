@@ -62,8 +62,7 @@
 
 <body>
   <div>
-    <video src="./video.mp3" autoplay id="video" class="video3"
-      style="width: 100px; height:100px;position: absolute;top:-10px;right: 10px;"></video>
+    <video src="./video.mp3" autoplay id="video" class="video3"></video>
   </div>
   <div class="page">
     <p class="li-none" id="page2Txt">
@@ -80,7 +79,7 @@
   <p class="first">
     <img src="./imgs/1.jpg" />
   </p>
-  <div style="width: 400px;height: 300px;position: absolute;top: 20%;left: 35%;display: none;">
+  <div class="img-wrapper">
     <img src="./imgs/4.jpg" id="img" alt="Here is a pic" />
   </div>
   <div class="two_p">
@@ -97,20 +96,20 @@
     <div id="DHTMLBOOK">
       <span class="page" onMouseDown="return false;" ondblclick="TPL();" onclick="TPL();"><img class="img" /></span>
 
-      <span class="page right" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img class="img"
-          style="LEFT: -100%" /></span>
+      <span class="page right turn0" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img
+          class="img" /></span>
 
-      <span class="page turn" onMouseDown="return false;" ondblclick="TPL();" onclick="TPL();"><img class="img"
-          style="FILTER: alpha(); opacity: 1" /></span>
+      <span class="page turn turn1" onMouseDown="return false;" ondblclick="TPL();" onclick="TPL();"><img
+          class="img" /></span>
 
-      <span class="page turn right" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img class="img"
-          style="FILTER: alpha(); LEFT: -100%; opacity: 1" /></span>
+      <span class="page turn right turn2" onmousedown="return false;" ondblclick="TPR();" onclick="TPR();"><img
+          class="img" /></span>
 
       <div id="TXTBOX"></div>
     </div>
   </div>
 
-  <div id="imgsrc" style="VISIBILITY: hidden">
+  <div id="imgsrc">
     <!-- <img alt="In the early morning he departed." src="../../img2/1.jpg" > -->
 
     <img alt="Believing she had dreamed of the roar of his bike," src="./imgs/6.jpg" />
