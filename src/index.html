@@ -6,25 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.scss">
+  <script src="./script.js"></script>
   <title>传媒软件</title>
-  <script>
-    var clientHeight = window.innerHeight;
-    document.addEventListener("mousewheel", function (args) {
-      var top = 0; // 向下
-
-      if (args.deltaY > 0) {
-        top = clientHeight;
-      } else {
-        top = -clientHeight;
-      }
-
-      console.log(top);
-      window.scrollBy({
-        top: top,
-        behavior: "smooth"
-      });
-    });
-  </script>
 </head>
 
 <body id="home-page">
@@ -34,13 +17,13 @@
       <img src="imgs/title.png">
     </div>
     <div class="content">
-      <a class="item" href="weixin-touxiang/index.html">
+      <a class="item" href="./hw/weixin-touxiang/index.html">
         <h2>
           换头像为武汉加油
         </h2>
       </a>
 
-      <a class="item" href="lady/index.html">
+      <a class="item" href="./hw/lady/index.html">
         <h2>
           女生节快乐
         </h2>
