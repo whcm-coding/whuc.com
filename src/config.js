@@ -9,5 +9,10 @@ var files = {
     title: '换头像为武汉加油',
     desc: '她很神秘，没有留下脚印...',
   },
+  taobao: {
+    author: '倪婵',
+    title: '淘宝',
+    desc: '她很神秘，没有留下脚印...',
+  }
 };
 export default files;

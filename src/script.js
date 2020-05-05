@@ -6,7 +6,7 @@ window.onload = function onHomePageLoaded() {
     el.className = 'item';
     el.href = `./hw/${key}/index.html`;
     el.target = '_self';
-    el.innerHTML = `<h2>${files[key].title}</h2>`;
+    el.innerHTML = `<h3>${files[key].title}</h3>`;
     content.appendChild(el);
   });
 };
