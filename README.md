@@ -20,13 +20,13 @@
 git clone https://github.com/whcm-coding/whuc.com.git
 ```
 
-### 在 src 文件夹下
+### 在 server 文件夹下
 
 ```
-parcel index.html
+npm run dev
 ```
 
-### 打开浏览器，打开 http://localhost:1234/
+### 打开浏览器，打开 http://localhost:3001/index.html
 
 ### 注意：Jquery 需以模块化方式引入，不能用全局方式，eg，src/hw/女神节.js 中引入方式
 

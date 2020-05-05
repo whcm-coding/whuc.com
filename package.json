@@ -11,8 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rm -rf dist/ && parcel src/index.html -p 3001",
-    "pro": "rm -rf dist/ && parcel src/index.html NODE_ENV=production -p 3001"
+    "dev": "rm -rf dist/ && parcel src/index.html src/hw/**/*.html -p 3001",
+    "pro": "rm -rf dist/ && parcel src/index.html src/hw/**/*.html NODE_ENV=production -p 3001"
   },
   "keywords": [],
   "author": "crooner",
